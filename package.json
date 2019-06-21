@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "start": "npm run build && live-server dist"
   },
-  "homepage": "https://lastsaintcrucified.github.io/music-master/",
   "author": "",
   "license": "ISC",
   "dependencies": {
