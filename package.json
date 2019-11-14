@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://lastsaintcrucified.github.io/music-master",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "start": "npm run build && live-server dist"
@@ -13,10 +15,12 @@
   "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "gh-pages": "^2.0.1",
     "live-server": "^1.2.1",
     "parcel-bundler": "^1.12.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
