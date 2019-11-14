@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://lastsaintcrucified.github.io/music-master",
   "scripts": {
-    "deploy": "npm run build && gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d dist",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "start": "npm run build && live-server dist"
